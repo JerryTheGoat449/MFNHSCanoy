@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+body {
+    background-color: #f4f4f4; /* Light gray background for the body */
+    color: #333; /* Dark gray text color */
+}
+    
+header {
+    background-color: #6c6c6c; /* Dark gray background for header */
+    color: white; /* White text for contrast */
+    padding: 15px 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+footer {
+    background-color: #6c6c6c; /* Dark gray background for footer */
+    color: white; /* White text for contrast */
+    padding: 15px 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* nav bar links */
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    color: white;
+    border-radius: 5px;
+    background-color: #555; /* Darker gray background on hover */
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #9e9e9e; /* Lighter gray */
+}
+
+.junior-high h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    font-size: 50px;
+    align-items: center;
+    color: #424242; /* Dark gray */
+}
+
+.junior-high {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.junior-high h3 {
+    text-decoration: none;
+    background: white;
+    color: #424242; /* Dark gray */
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: 1px solid #eeeeee; /* Very light gray border */
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.program {
+    position: relative;
+    width: 60%;
+    margin: 0 20%;
+    transition: margin-bottom 0.5s;
+}
+
+.program .info {
+    display: none;
+    background: white;
+    color: #616161; /* Slightly darker gray */
+    padding: 10px;
+    border: 1px solid #bdbdbd; /* Medium gray */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(163, 191, 255, 0.4);
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    opacity: 0;
+    transition: opacity 0.5s, max-height 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.junior-high .program:hover .info {
+    display: block;
+    opacity: 1;
+    max-height: 200px;
+}
+footer {
+    background: #6c6c6c; /* Dark gray footer */
+    color: white; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.footer-col h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*gapsa tibaghak*/
+.footer-col ul li {
+    margin: 2px 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.footer-col form {
+    margin-top: 10px;
+}
+
+.footer-col input {
+    padding: 5px;
+    border: none;
+}
+
+.footer-col button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-col button:hover {
+    background: #555; /* Dark gray hover */
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
